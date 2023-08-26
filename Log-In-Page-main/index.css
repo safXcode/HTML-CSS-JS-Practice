@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container{
+    color: white;
+    position: absolute;
+   top: 22%;
+   left: 35%;
+}
+
+.container h1{
+    display: inline-block;
+    font-family: 'Heebo', sans-serif;
+    font-size: 2.5rem;
+    border-bottom: .3125rem solid purple;
+    margin-bottom: 15px;
+    padding: 13px 0;
+
+}
+.box{
+    width: 100%;
+    border-bottom: 2px solid purple;
+    margin: 22px 0px;
+
+}
+.box input{
+    background: none;
+    width: 75%;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: white;
+
+   
+}
+.box i{
+    width: 25px ;
+    text-align: center;
+}
+
+.btn{
+    cursor: pointer;
+    outline: none;
+    margin: 12px 0;
+    padding: 10px 21px;
+    border-radius: 10px;
+    border: 2px solid purple;
+    background: none;
+    color: white;
+    font-size: .9375rem;
+    font-weight: bold;
+    font-family: 'Heebo', sans-serif;
+}
+
+.btn:hover{
+color: purple;
+background: white;
+}
+
+@media screen and (max-width:393px) {
+  .container{
+    top: 31%;
+   left: 13%;
+}
+  }
+@media screen and (max-width:360px) {
+  .container{
+    top: 25%;
+   left: 8%;
+}
+  }
+@media screen and (max-width:419px) {
+  .container{
+    top: 23%;
+   left: 13%;
+}
+  }
+

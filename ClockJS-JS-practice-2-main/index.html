@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock project</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 43px;
+            margin: 17px 0;
+            background-color: grey;
+            color: white;
+        }
+
+        h2 {
+            font-size: 30px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>clock using java script</h1>
+        <h2>Current Time Is: <span id="time"></span></h2>
+    </div>
+
+    <script>
+        let a;
+        let time;
+        let date;
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        setInterval(() => {
+            a = new Date();
+            time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+            date = a.toLocaleDateString(undefined, options);
+            document.getElementById('time').innerHTML = time + '<br>on ' + date;
+        }, 1000);
+    </script>
+</body>
+</html>
